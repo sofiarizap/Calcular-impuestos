@@ -1,0 +1,23 @@
+<!DOCTYPE HTML> 
+<HTML>
+<head>
+  <title>Ejercicio 1</title>
+</head>
+<body>
+  <script>
+    var edad = (parseInt(prompt("Cual es tu edad?")))
+    var ingresos = (parseInt(prompt("De cuanto son tus ingresos")))
+
+    var calcularImpuestos = calcularImpuestos(edad,ingresos)
+    
+    function calcularImpuestos(edad,ingresos) {
+      if(edad >= 18 && ingresos >= 1000) {
+        return ingresos*0.4
+      } else {
+        return ingresos*0
+      }
+    }
+    document.write ('tus impuestos seran de $ ' + calcularImpuestos );
+  </script>
+</body>
+</HTML>
